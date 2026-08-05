@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rails-runtimes host</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; background: #f6f7f9; color: #1a1a1a; }
+      .wrap { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+      table { width: 100%; border-collapse: collapse; background: #fff; margin: 1rem 0; }
+      th, td { border: 1px solid #ddd; padding: 0.5rem 0.75rem; text-align: left; font-size: 0.9rem; }
+      th { background: #f0f2f5; }
+      .summary { display: flex; gap: 1rem; flex-wrap: wrap; }
+      .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1rem 1.25rem; min-width: 120px; }
+      .card strong { display: block; font-size: 1.5rem; }
+      .flash { padding: 0.75rem 1rem; background: #fff3cd; border: 1px solid #ffecb5; border-radius: 6px; margin-bottom: 1rem; }
+      .alert { background: #f8d7da; border-color: #f5c2c7; }
+      form.login { background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ddd; max-width: 360px; }
+      form.login label { display: block; margin: 0.5rem 0 0.25rem; }
+      form.login input { width: 100%; padding: 0.4rem; box-sizing: border-box; }
+      button, .btn { cursor: pointer; padding: 0.4rem 0.8rem; border-radius: 6px; border: 1px solid #ccc; background: #fff; }
+      h1 { margin-top: 0; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <% if flash[:alert] %><div class="flash alert"><%= flash[:alert] %></div><% end %>
+      <% if flash[:notice] %><div class="flash"><%= flash[:notice] %></div><% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

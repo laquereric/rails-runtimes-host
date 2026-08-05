@@ -1,0 +1,9 @@
+<h1>Host admin sign-in</h1>
+<p>Local demo only. Use the credentials from your demo <code>.env</code>.</p>
+<%= form_with url: admin_session_path, method: :post, local: true, class: "login" do %>
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" required />
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" required />
+  <p style="margin-top:1rem"><button type="submit">Sign in</button></p>
+<% end %>

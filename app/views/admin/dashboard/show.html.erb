@@ -1,0 +1,71 @@
+<header style="display:flex;justify-content:space-between;align-items:center">
+  <h1>rails-runtimes host dashboard</h1>
+  <%= button_to "Sign out", admin_session_path, method: :delete if current_admin %>
+</header>
+
+<section class="summary">
+  <div class="card"><span>Registered users</span><strong><%= @summary[:users] %></strong></div>
+  <div class="card"><span>Active installations</span><strong><%= @summary[:active_installations] %></strong></div>
+  <div class="card"><span>Public TODOs</span><strong><%= @summary[:public_todos] %></strong></div>
+</section>
+
+<h2>Registered users</h2>
+<table>
+  <thead>
+    <tr><th>Display name</th><th>Email</th><th>Installations</th><th>First dialed</th><th>Last seen</th></tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.display_name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.installations.size %></td>
+        <td><%= user.installations.map(&:created_at).min&.utc&.iso8601 %></td>
+        <td><%= user.installations.map(&:last_seen_at).compact.max&.utc&.iso8601 %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2>Installations</h2>
+<table>
+  <thead>
+    <tr><th>User</th><th>Client instance</th><th>App version</th><th>Manifest digest</th><th>Status</th><th>Last seen</th><th></th></tr>
+  </thead>
+  <tbody>
+    <% @installations.each do |inst| %>
+      <tr>
+        <td><%= inst.user.display_name %></td>
+        <td><code><%= inst.client_instance_id.to_s[0, 8] %>…</code></td>
+        <td><%= inst.application_version %></td>
+        <td><code><%= inst.manifest_digest[0, 12] %>…</code></td>
+        <td><%= inst.status %></td>
+        <td><%= inst.last_seen_at&.utc&.iso8601 %></td>
+        <td>
+          <% if inst.active? %>
+            <%= button_to "Revoke", admin_revoke_installation_path(inst), method: :post %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2>Public TODOs</h2>
+<table>
+  <thead>
+    <tr><th>Title</th><th>Completed</th><th>Owner</th><th>Source TODO</th><th>Source updated</th><th>Host committed</th></tr>
+  </thead>
+  <tbody>
+    <% @public_todos.each do |todo| %>
+      <tr>
+        <td><%= todo.title %></td>
+        <td><%= todo.completed %></td>
+        <td><%= todo.installation.user.email %></td>
+        <td><code><%= todo.source_todo_id.to_s[0, 8] %>…</code></td>
+        <td><%= todo.source_updated_at&.utc&.iso8601 %></td>
+        <td><%= todo.host_committed_at&.utc&.iso8601 %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
