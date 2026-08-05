@@ -16,6 +16,7 @@ module RailsRuntimesHost
     config.api_only = false
     config.autoload_lib(ignore: %w[assets tasks])
     config.generators.system_tests = nil
+    config.require_master_key = false
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore, key: "_rails_runtimes_host_session"
   end

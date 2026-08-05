@@ -10,6 +10,7 @@ gem "puma", ">= 6.0"
 gem "bcrypt", "~> 3.1"
 gem "bootsnap", require: false
 gem "dotenv-rails", groups: %i[development test]
+# Docker sets RAILS_RUNTIMES_PATH=/workspace/rails-runtimes at build time.
 gem "rails-runtimes", path: ENV.fetch("RAILS_RUNTIMES_PATH", "../rails-runtimes")
 
 group :development, :test do

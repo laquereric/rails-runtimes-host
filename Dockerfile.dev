@@ -11,7 +11,9 @@ ENV BUNDLE_PATH=/usr/local/bundle
 
 COPY rails-runtimes /workspace/rails-runtimes
 COPY rails-runtimes-host/Gemfile rails-runtimes-host/Gemfile.lock* ./
-RUN bundle install
+# Evaluate Gemfile path via RAILS_RUNTIMES_PATH already set above.
+RUN bundle config set --local without 'test' && \
+    bundle install
 
 COPY rails-runtimes-host .
 
