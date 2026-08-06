@@ -1,4 +1,7 @@
 # frozen_string_literal: true
+# Copyright 2026 CBI BUSINESS TRANSACTIONS, LLC
+# SPDX-License-Identifier: Apache-2.0
+# Part of RailsRuntimes -- https://github.com/laquereric/DataYoursSoftwareMine
 
 ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
 require "bundler/setup"

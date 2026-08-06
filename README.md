@@ -37,3 +37,7 @@ bin/rails server -p 3000
 ## License
 
 Apache-2.0. See `LICENSE`.
+
+## Copyright
+
+(c) 2026 CBI BUSINESS TRANSACTIONS, LLC. Part of RailsRuntimes -- https://github.com/laquereric/DataYoursSoftwareMine. Licensed under Apache-2.0.
