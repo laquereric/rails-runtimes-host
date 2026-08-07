@@ -1,3 +1,8 @@
+# frozen_string_literal: true
+# Copyright 2026 CBI BUSINESS TRANSACTIONS, LLC
+# SPDX-License-Identifier: LicenseRef-DataYoursSoftwareMine-1.0
+# Part of RailsRuntimes -- https://github.com/laquereric/DataYoursSoftwareMine
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.

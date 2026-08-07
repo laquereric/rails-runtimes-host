@@ -1,21 +1,129 @@
-Copyright 2026 CBI BUSINESS TRANSACTIONS, LLC
+DATA YOURS, SOFTWARE MINE
+Default Restrictive License -- mm-1.0:proprietary-restrictive
 
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+Copyright (c) 2026 CBI Business Transactions, LLC. All rights reserved.
 
-   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+This is a proprietary, all-rights-reserved license. It grants an
+evaluation-and-internal-use right to the Software while preserving the
+Licensee's autonomy over their own User Data. Section 5 is controlling: the
+Licensee's data rights survive every restriction and survive termination.
 
-   Copyright 2026 Eric Laquer
+======================================================================
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+§1 -- Purpose
+This License governs use of the Software as a proprietary work. All rights not
+expressly granted herein are reserved by the Licensor. Acceptance is required
+before any use.
 
-       http://www.apache.org/licenses/LICENSE-2.0
+§2 -- Definitions
+"Software" means the licensed work and its Corresponding Source as delivered.
+"Licensee" means the individual or entity granted rights under this License.
+"User Data" means data submitted to, produced by, or derived from the
+Licensee's own use of the Software. "Distribute" means to convey a copy to any
+third party by any means.
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+§3.1 -- Grant of Limited Use
+Subject to full compliance with this License, the Licensor grants the Licensee
+a non-exclusive, non-transferable, revocable right to install and use the
+Software solely for the Licensee's own internal purposes or evaluation.
+
+§3.2 -- Reservation of Rights
+No rights are granted by implication, estoppel, or otherwise. The Licensor
+retains all copyright, patent, trademark, and trade-secret rights in the
+Software. This is a license, not a sale.
+
+§4.1 -- No Redistribution
+The Licensee may not Distribute, sublicense, rent, lease, lend, sell, publish,
+or make the Software available to any third party, in whole or in part, without
+the Licensor's prior written consent.
+
+§4.2 -- No Modification for Others
+The Licensee may not modify, adapt, translate, or create derivative works of
+the Software for Distribution. Internal configuration necessary for permitted
+use is allowed; conveying any modified form to a third party is not.
+
+§4.3 -- No Reverse Engineering
+Except to the minimum extent that applicable law expressly forbids this
+limitation, the Licensee may not decompile, disassemble, or reverse engineer
+the Software to derive source code or underlying methods.
+
+§4.4 -- No Notice Removal
+The Licensee may not remove, obscure, or alter any copyright, license,
+attribution, or proprietary notice contained in the Software.
+
+§4.5 -- No Competitive or Benchmarking Publication
+The Licensee may not disclose non-public benchmark methodologies or results
+provided by the Licensor or derived from the Licensor's Confidential
+Information without the Licensor's prior written consent. This §4.5 does not
+prohibit the Licensee from exercising their rights in User Data under §5, from
+complying with a legal obligation, or from using benchmarking information
+already in the public domain.
+
+§5.0 -- Priority, Scope, and Non-Derogation
+(a) Priority. This §5 controls over any conflicting provision of this
+License — including §§3, 4, 6, 7, 8, and 9 — to the extent necessary to
+preserve the Licensee's rights in User Data. (b) Data Rights. As between
+the parties, the Licensee retains all right, title, and interest in User Data;
+the Licensee may access, copy, export, retain, migrate, and independently use
+User Data, and may authorize an Authorized Data Recipient to do so on the
+Licensee's behalf. (c) Carve-Out. This §5 grants no right to copy,
+distribute, modify, reverse engineer, or continue using the Software beyond the
+rights expressly granted in §3. The Licensor's obligations under this §5
+survive expiration or termination to the extent necessary to effect the data
+rights stated here.
+
+§5.1 -- Maintain User Autonomy
+Notwithstanding the restrictions on the Software above, nothing in this License
+restricts the Licensee's rights in their own User Data. This License is not used
+to condition access to User Data on waiving any right, nor to prevent the
+Licensee from independently exercising rights in that data.
+
+§5.2 -- Provide User Data
+Where the Licensor operates an instance processing the Licensee's User Data, the
+Licensor provides the Licensee a reasonable means to obtain a complete copy of
+that User Data in a documented, interoperable format, without undue delay.
+
+§5.3 -- No Withholding User Data
+The Licensor does not withhold the Licensee's User Data as leverage to force
+acceptance of additional terms, fees, or technical restrictions that limit
+independent use of that data with other software.
+
+§5.4 -- No Data Lock-in
+The Licensor does not impose technical measures or legal terms that prevent the
+Licensee from migrating their User Data to another operator or a self-hosted
+instance.
+
+§6.1 -- Confidentiality
+The Software and any non-public information disclosed with it are the Licensor's
+confidential information. The Licensee shall protect it with at least reasonable
+care and not disclose it except to personnel bound by equivalent obligations.
+
+§6.2 -- Ownership of Feedback
+Feedback the Licensee voluntarily provides about the Software may be used by the
+Licensor without obligation; the Licensee's User Data is not Feedback.
+
+§7.1 -- Termination
+This License and all granted rights terminate automatically upon any breach by
+the Licensee. The Licensor may also terminate for convenience on written notice.
+
+§7.2 -- Effect of Termination
+On termination the Licensee shall cease all use and destroy all copies of the
+Software. Termination of Software rights does not extinguish the Licensee's
+rights in their own User Data under §5; export obligations survive to permit
+data retrieval.
+
+§7.3 -- Survival
+§§2, 5, 6, 7.2, 8, and 9 survive termination.
+
+§8 -- Disclaimer of Warranty
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NON-INFRINGEMENT.
+
+§9 -- Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR IS NOT LIABLE FOR ANY
+INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, OR FOR LOST PROFITS OR
+DATA, ARISING FROM USE OF THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY.
+
+======================================================================
+END OF LICENSE.

@@ -5,7 +5,7 @@ TODO proof of concept. Implements the `public-todo/v1` protocol receiver, user
 registration from dialing clients, and an administrator dashboard that shows
 the aggregate of public TODOs only.
 
-Apache-2.0.
+LicenseRef-DataYoursSoftwareMine-1.0.
 
 ## What it does
 
@@ -36,8 +36,8 @@ bin/rails server -p 3000
 
 ## License
 
-Apache-2.0. See `LICENSE`.
+LicenseRef-DataYoursSoftwareMine-1.0. See `LICENSE`.
 
 ## Copyright
 
-(c) 2026 CBI BUSINESS TRANSACTIONS, LLC. Part of RailsRuntimes -- https://github.com/laquereric/DataYoursSoftwareMine. Licensed under Apache-2.0.
+(c) 2026 CBI BUSINESS TRANSACTIONS, LLC. Part of RailsRuntimes -- https://github.com/laquereric/DataYoursSoftwareMine. Licensed under LicenseRef-DataYoursSoftwareMine-1.0.
